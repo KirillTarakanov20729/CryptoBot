@@ -19,6 +19,7 @@ from app.Controllers.Bids.Payment.ResponseBidController import response_bid_rout
 from app.Controllers.Bids.Payment.PayBidController import pay_bid_router
 from app.Controllers.Bids.Payment.CompleteBidController import complete_bid_router
 from app.Controllers.Bids.Payment.CancelBidController import cancel_bid_router
+from app.Controllers.Balance.SecretController import secret_router
 from app.Controllers.Main.Help.HelpController import help_router
 
 load_dotenv()
@@ -44,6 +45,7 @@ async def main():
     dp.include_router(pay_bid_router)
     dp.include_router(complete_bid_router)
     dp.include_router(cancel_bid_router)
+    dp.include_router(secret_router)
     dp.include_router(help_router)
 
     await bot.delete_webhook()

@@ -7,5 +7,6 @@ MainInlineKeyboard = InlineKeyboardMarkup(
         [InlineKeyboardButton(text="Заявки", callback_data="bids")],
         [InlineKeyboardButton(text="Мои заявки", callback_data="user_bids")],
         [InlineKeyboardButton(text="Создать заявку", callback_data="store_bid")],
+        [InlineKeyboardButton(text="Секрет", callback_data="secret")],
         [InlineKeyboardButton(text="Выйти", callback_data="logout")]
     ])
